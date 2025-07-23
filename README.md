@@ -1,39 +1,43 @@
-# 📝 To-Do List App
+# Secrets Web App 🔐
 
-A full-stack To-Do List web application built using **Node.js**, **Express**, **MongoDB**, and **EJS**.  
-This app allows users to create, update, and delete their daily tasks efficiently.
-
----
-
-## 🌐 Live Demo
-
-🔗 [Visit the Live App](https://authentication-security.onrender.com)
+This is a Node.js-based web application where users can register, log in securely, and anonymously share their secrets. It uses **Express**, **MongoDB**, **EJS**, **Sessions**, and **Bcrypt** for authentication and data handling.
 
 ---
 
 ## 🚀 Features
 
-- Add new tasks with ease
-- Edit existing tasks
-- Delete completed or unwanted tasks
-- Prioritize and organize your tasks
-- Responsive user interface
+- User registration with email & password
+- Password hashing using Bcrypt
+- Session-based login authentication
+- Secret submission form
+- Personal secret storage per user
+- View your own submitted secrets
+- Logout functionality
 
 ---
 
-## 🛠️ Tech Stack
+## 💻 Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript, EJS (Embedded JavaScript)
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB with Mongoose
-- **Deployment**: [e.g., Render / Railway / Vercel / Heroku]
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- EJS Templating
+- Bcrypt.js
+- Express-session
+- dotenv for environment variables
 
 ---
 
-## 📦 Installation (for local development)
+## 🌐 Live Demo
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-npm install
-npm start
+**🔗 Deploy Link:**  
+👉 [Visit Live App](https://authentication-security.onrender.com)
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/prajwalpatilPp1/Authentication-Security
+   cd secrets-app
