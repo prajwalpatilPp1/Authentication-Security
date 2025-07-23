@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron-centered text-center mt-5">
+    <i class="fas fa-key fa-6x mb-4"></i>
+    <h1 class="display-3">Secrets!</h1>
+    <p class="lead">Don't share your secrets, share them anonymously!</p>
+    <hr class="my-4">
+
+    <!-- Submit Secret Form -->
+    <form action="/submit" method="post" class="mt-4">
+      <div class="form-group mb-3">
+        <input
+          type="text"
+          class="form-control text-center fs-5"
+          name="secret"
+          placeholder="What is your secret?"
+          required
+        >
+      </div>
+      <button type="submit" class="btn btn-dark fs-5 px-4">Submit</button>
+    </form>
+
+    <!-- Show Secrets Button -->
+   <form action="/secrets" method="get" class="mt-3">
+  <button type="submit" class="btn btn-secondary fs-5 px-4">Show Secrets</button>
+</form>
+
+
+
+    <!-- User Info -->
+    <div class="mt-4">
+      <h5>Logged in as:</h5>
+      <p><strong>Email:</strong> <%= userEmail %></p>
+      <p><strong>Password:</strong> <%= userPassword %></p> <!-- ⚠️ Avoid in real apps -->
+    </div>
+
+    <!-- Show Secrets if exist -->
+    <% if (secrets && secrets.length > 0) { %>
+      <div class="mt-5 text-start">
+        <h3>Your Secrets:</h3>
+        <ul class="list-group">
+          <% secrets.forEach(secret => { %>
+            <li class="list-group-item"><%= secret.secret %></li>
+          <% }); %>
+        </ul>
+      </div>
+    <% } %>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

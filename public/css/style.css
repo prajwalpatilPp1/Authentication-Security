@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.jumbo .container {
+    margin-top: 100px;
+   justify-content: center;
+}
+
+html {
+    background-color: #E8ECEF !important;
+}
+
+body{
+    background-color: #E8ECEF !important;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+    background-color: #E8ECEF !important;
+    justify-content: center;
+}
+
+.secret-text {
+    text-align: center;
+    font-size: 2rem; /* Corrected from font-style */
+    color: #fff;
+    background-color: #000;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.container {
+    background-color: #E8ECEF !important;
+    
+    justify-content: center;
+}
+
+.row {
+    background-color: #E8ECEF !important;
+}
+

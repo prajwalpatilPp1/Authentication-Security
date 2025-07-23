@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Register</h2>
+
+          <% if (typeof message !== "undefined" && message) { %>
+            <div class="alert alert-info text-center fs-5"><%= message %></div>
+          <% } %>
+
+          <form action="/register" method="POST">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="username" id="email" required>
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 mb-3">Register</button>
+          </form>
+
+          <div class="text-center">
+            <p>Already have an account?</p>
+            <a href="/login" class="btn btn-secondary me-2">Login</a>
+            <a href="/" class="btn btn-outline-primary">Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
